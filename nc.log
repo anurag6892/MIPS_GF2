@@ -1,0 +1,64 @@
+ncverilog: 08.20-p001: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
+TOOL:	ncverilog	08.20-p001: Started on Dec 31, 2012 at 08:57:23 IST
+ncverilog
+	-l
+	nc.log
+	+access+r
+	-f mips.f
+		time.v
+		gfm_transpose.v
+		srxy.v
+		gfm_mac.v
+		gfm_mac_pack.v
+		pbasis_builder.v
+		mips_32_pbasis.v
+		instr_mem.v
+		data_mem.v
+		mips_mem.v
+		mipstest.v
+Recompiling... reason: file './mipstest.v' is newer than expected.
+	expected: Mon Dec 31 08:42:20 2012
+	actual:   Mon Dec 31 08:45:49 2012
+file: time.v
+file: gfm_transpose.v
+file: srxy.v
+file: gfm_mac.v
+file: gfm_mac_pack.v
+file: pbasis_builder.v
+file: mips_32_pbasis.v
+file: instr_mem.v
+file: data_mem.v
+file: mips_mem.v
+file: mipstest.v
+	module worklib.top:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.top:v <0x2039104d>
+			streams:  31, words: 12212
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                94      21
+		Registers:             434     118
+		Scalar wires:           63       -
+		Expanded wires:          3       1
+		Vectored wires:        191       -
+		Always blocks:         120      21
+		Initial blocks:         14      14
+		Cont. assignments:     125      37
+		Pseudo assignments:      9       9
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.flopen:v
+Loading snapshot worklib.flopen:v .................... Done
+ncsim> source /cad/digital/cadence/IUS82/tools/inca/files/ncsimrc
+ncsim> run
+Transpose Successful!!!
+Multiplication Successfull!!!
+Simulation complete via $finish(1) at time 28175 NS + 0
+./mipstest.v:142          #25000 $finish;
+ncsim> exit
+TOOL:	ncverilog	08.20-p001: Exiting on Dec 31, 2012 at 08:57:24 IST  (total: 00:00:01)

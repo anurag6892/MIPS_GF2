@@ -1,0 +1,25 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx86.08.20.nc
+-RUNMODE
+time.v
+gfm_transpose.v
+srxy.v
+gfm_mac.v
+gfm_mac_pack.v
+pbasis_builder.v
+mips_32_pbasis.v
+instr_mem.v
+data_mem.v
+mips_mem.v
+mipstest.v
+-CDSLIB
+./INCA_libs/irun.lnx86.08.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx86.08.20.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-ALLOWUNBOUND
