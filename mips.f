@@ -1,9 +1,9 @@
 time.v
-gfm_transpose.v
-srxy.v
-gfm_mac.v
-gfm_mac_pack.v
-pbasis_builder.v
+gf2_modules/gfm_transpose.v
+gf2_modules/srxy.v
+gf2_modules/gfm_mac.v
+gf2_modules/gfm_mac_pack.v
+gf2_modules/pbasis_builder.v
 mips_datapath.v
 instr_mem.v
 data_mem.v
