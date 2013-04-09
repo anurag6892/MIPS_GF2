@@ -1,2 +1,7 @@
 32-bit MIPS processor with GF2 modules for transpose, multiplication and partial basis search added as custom instructions
 
+The structure of the code is as follows -
+'instrmem.v' and 'data\_mem.v' contain the instruction and data memory modules
+'mips\_datapath.v' contains the main mips core along with GF(2) modules attached.
+'mips.v' instantiates modules from the above three files to form the top level module for the MIPS processor
+'mipstest.v' is a testebench module which contains a handwritten code and is used for simulation purposes.
